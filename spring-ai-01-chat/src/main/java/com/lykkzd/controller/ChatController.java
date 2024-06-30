@@ -3,6 +3,8 @@ package com.lykkzd.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.ai.openai.OpenAiChatModel;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -17,6 +19,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class ChatController {
 
     private final OpenAiChatModel openAiChatModel;
+
+    @RequestMapping(value = "/ai/chat")
+    public String chat(@RequestParam(value = "msg") String msg) {
+        return null;
+    }
 
 
 
