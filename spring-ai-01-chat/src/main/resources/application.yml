@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: spring-ai-01-chat
+
+  ai:
+    openai:
+      api-key:
+      base-url:
