@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: spring-ai-02-image
+
+  ai:
+    openai:
+      api-key:
+      base-url:
+      image:
+        options:
+          model: gpt-4-dalle
+          quality: hd
+          n: 2
+          height: 1024
+          width: 1024
+

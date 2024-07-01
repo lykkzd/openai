@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: spring-ai-03-transcriptions
+
+  ai:
+    openai:
+      api-key:
+      base-url:
+
