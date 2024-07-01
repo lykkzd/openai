@@ -6,3 +6,7 @@ spring:
     openai:
       api-key:
       base-url:
+      chat:
+        options:
+          model: gpt-4-o
+          temperature: 0.4F
