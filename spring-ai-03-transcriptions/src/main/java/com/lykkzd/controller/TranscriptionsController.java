@@ -3,6 +3,7 @@ package com.lykkzd.controller;
 import lombok.RequiredArgsConstructor;
 import org.apache.catalina.webresources.FileResource;
 import org.springframework.ai.openai.OpenAiAudioTranscriptionModel;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.io.Resource;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,7 +28,7 @@ public class TranscriptionsController {
     @RequestMapping("/ai/transcriptions")
     public Object transcriptions() {
         // 传入音频文件路径
-        Resource audioFile = new FileSystemResource("classpath:jfk.flac");
+        Resource audioFile = new ClassPathResource("cat.mp3");
         // 返回音频转好的文本信息
         String text = openAiAudioTranscriptionModel.call(audioFile);
         return text;

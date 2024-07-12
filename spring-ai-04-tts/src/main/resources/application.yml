@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: spring-ai-04-tts
+
+  ai:
+    openai:
+      api-key:
+      base-url:
+
